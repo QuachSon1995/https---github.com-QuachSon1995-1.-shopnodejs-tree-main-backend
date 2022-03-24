@@ -16,8 +16,8 @@ db.sync().then(() => {
 const account = require('./routes/accountRouter');
 app.use("/api/account", account);
 
-// const category = require('./routes/category');
-// app.use("/api/category", category);
+const category = require('./routes/categoryRouter');
+app.use("/api/category", category);
 
 // const product = require('./routes/product');
 // app.use("/api/product", product);
